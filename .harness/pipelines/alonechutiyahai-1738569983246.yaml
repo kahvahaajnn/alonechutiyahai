@@ -39,6 +39,20 @@ pipeline:
                       python3 -m pip install -e .
                   timeout: ""
                   type: Run
+              - step:
+                  identifier: chmodx
+                  name: chm
+                  spec:
+                    command: chmod +x *
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: runpython
+                  name: run python script A.py
+                  spec:
+                    command: python3 A.py
+                  timeout: ""
+                  type: Run
           platform:
             arch: Amd64
             os: Linux
