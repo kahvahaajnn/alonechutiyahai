@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_kahvahaajnn_alonechutiyahai_1738570001940-push-trigger-input-set
+  identifier: Build_kahvahaajnn_alonechutiyahai_1738570001940pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_kahvahaajnn_alonechutiyahai_1738570001940
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
